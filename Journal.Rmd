@@ -44,8 +44,39 @@ d<- (a-b)
 ```{r}
 for(p in 1:100)
   print(p)
+
+seq(1:100)
 ```
-  
+  4. Find the sum of all the integer numbers from 1 to 100.
+```{r}
+{
+  a<- seq(1:100)
+sum(a)}
+
+
+{myNum<-0
+counter<-0
+while(myNum <= 5050){
+  myNum<-myNum+1
+  counter<-counter+1
+}
+myNum}
+
+```  
+  5. Write a function to find the sum of all integers between any two values.
+```{r}
+mySum<- function (x) {
+  totalSum<-0
+  for (i in x){
+    totalSum<-totalSum+i
+  }
+  return(totalSum)
+}
+test<-c(1:100)
+mySum(test)
+
+k<- mySum(test)
+``` 
   
   
   
