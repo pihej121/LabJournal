@@ -1,2 +1,0 @@
-"0","samples <- rnorm(100, mean=0, sd=1)"
-"0","hist(samples)"
