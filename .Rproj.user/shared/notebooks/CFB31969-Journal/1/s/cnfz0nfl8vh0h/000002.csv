@@ -1,0 +1,11 @@
+"0","mean_A <- function(x){
+  return(sum(x)/length(x))
+}
+
+some_numbers <- c(1:100)
+mean_A(some_numbers)
+"
+"1","[1]"
+"1"," 50.5"
+"1","
+"

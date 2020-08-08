@@ -1,0 +1,7 @@
+"0","result <- getmode(v)
+print(result)
+"
+"1","[1]"
+"1"," 3"
+"1","
+"
