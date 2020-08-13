@@ -271,6 +271,37 @@ write.csv(a)
 ```
 
 
+# Problem 1
+The FizzBuzz Problem. List the numbers from 1 to 100 with the following constraints. If the number can be divided by three evenly, then print Fizz instead of the number. If the number can be divided by five evenly, then print Buzz instead of the number. Finally, if the number can be divided by three and five evenly, then print FizzBuzz instead of the number.
+```{r}
+for (i in 1:100){
+  
+  if(i%%3 == 0 & i%%5 == 0) {
+    print('FizzBuzz')
+  }
+  else if(i%%3 == 0) {
+    print('Fizz')
+  }
+  else if (i%%5 == 0){
+    print('Buzz')
+  }
+  else {
+    print(i)
+  }
+}
 
+```
 
+# Problem 2
+Take text as input, and be able to produce a table that shows the counts for each character in the text. This problem is related to the earlier easy problem asking you to count the number of times that a single letter appears in a text. The slightly harder problem is the more general version: count the frequencies of all unique characters in a text.
+```{r}
+a<-"Batman is a better superhero than Superman"
+table(unlist(strsplit(a,split="")))
+```
+# Problem 3
+Test the random number generator for a flat distribution. Generate a few million random numbers between 0 and 100. Count the number of 0s, 1s, 2s, 3s, etc. all the way up to 100. Look at the counts for each of the numbers and determine if they are relatively equal. For example, you could plot the counts in Excel to make a histogram. If all of the bars are close to being flat, then each number had an equal chance of being selected, and the random number generator is working without bias.
+```{r}
+a<-runif(1000000,0,100)
+hist(a)
+```
 
