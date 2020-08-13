@@ -374,43 +374,9 @@ div.tocify {
 
 
 <p>IMPORTANT: You can delete everything in here and start fresh. You might want to start by not deleting anything above this line until you know what that stuff is doing.</p>
-<p>This is an .Rmd file. It is plain text with special features. Any time you write just like this, it will be compiled to normal text in the website. If you put a # in front of your text, it will create a top level-header.</p>
-<div id="my-first-post" class="section level1">
-<h1>My first post</h1>
-<p>2018 | 7 | 23 Last compiled: 2020-08-07</p>
-<p>Notice that whatever you define as a top level header, automatically gets put into the table of contents bar on the left.</p>
-<div id="second-level-header" class="section level2">
-<h2>Second level header</h2>
-<p>You can add more headers by adding more hashtags. These won’t be put into the table of contents</p>
-<div id="third-level-header" class="section level3">
-<h3>third level header</h3>
-<p>Here’s an even lower level header</p>
-</div>
-</div>
-</div>
-<div id="my-second-post-note-the-order" class="section level1">
-<h1>My second post (note the order)</h1>
-<p>2018 | 7 | 23 Last compiled: 2020-08-07</p>
-<p>I’m writing this tutorial going from the top down. And, this is how it will be printed. So, notice the second post is second in the list. If you want your most recent post to be at the top, then make a new post starting at the top. If you want the oldest first, do, then keep adding to the bottom</p>
-</div>
-<div id="adding-r-stuff" class="section level1">
-<h1>Adding R stuff</h1>
-<p>So far this is just a blog where you can write in plain text and serve your writing to a webpage. One of the main purposes of this lab journal is to record your progress learning R. The reason I am asking you to use this process is because you can both make a website, and a lab journal, and learn R all in R-studio. This makes everything really convenient and in the sam place.</p>
-<p>So, let’s say you are learning how to make a histogram in R. For example, maybe you want to sample 100 numbers from a normal distribution with mean = 0, and standard deviation =1, and then you want to plot a histogram. You can do this right here by using an r code block, like this:</p>
-<pre class="r"><code>samples &lt;- rnorm(100, mean=0, sd=1)
-hist(samples)</code></pre>
-<p><img src="Journal_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>When you knit this R Markdown document, you will see that the histogram is printed to the page, along with the R code. This document can be set up to hide the R code in the webpage, just delete the comment (hashtag), from the cold folding option in the yaml header up top. For purposes of letting yourself see the code, and me see the code, best to keep it the way that it is. You learn all of these things and more can be customized in each R code block.</p>
-</div>
-<div id="the-big-idea" class="section level1">
-<h1>The big idea</h1>
-<p>Use this lab journal to record what you do in R. This way I will be able to see what you are doing and help you along the way. You will also be creating a repository of all the things you do. You can make posts about everything. Learning specific things in R (project unrelated), and doing things for the project that we will discuss at the beginning of the Fall semester. You can get started now by fiddling around with googling things, and trying stuff out in R. I’ve placed some helpful starting links in the links page on this website</p>
-</div>
-<div id="what-can-you-do-right-now-by-yourself" class="section level1">
-<h1>What can you do right now by yourself?</h1>
-<p>It’s hard to learn programming when you don’t have specific problems that you are trying to solve. Everything just seems abstract.</p>
-<p>I wrote an <a href="https://crumplab.github.io/programmingforpsych/">introductory programming book that introduces R</a>, and gives some <a href="https://crumplab.github.io/programmingforpsych/programming-challenges-i-learning-the-fundamentals.html">concrete problems for you to solve</a>.</p>
-<p>To get the hang of journaling and solving the problems to learn programming, my suggestion is that you use this .Rmd file to solve the problems. It would look like this:</p>
+<div id="patricks-journal" class="section level1">
+<h1>Patrick’s Journal</h1>
+<p>Made to keep a record of my practice with coding by displaying my practice code questions, answers and future pieces of code</p>
 </div>
 <div id="problem-1" class="section level1">
 <h1>Problem 1</h1>
@@ -594,45 +560,45 @@ prime_numbers(100)</code></pre>
 <h1>Problem 8</h1>
 <p>Generate 100 Random Numbers</p>
 <pre class="r"><code>runif(100)</code></pre>
-<pre><code>##   [1] 0.48196848 0.77775199 0.20048900 0.53218842 0.44603481 0.54762303
-##   [7] 0.47479793 0.28433642 0.20714617 0.38780181 0.11043448 0.21565237
-##  [13] 0.37815101 0.48614107 0.36716822 0.83040208 0.03933986 0.53015884
-##  [19] 0.89517688 0.97747328 0.13206734 0.04573673 0.66520073 0.21865687
-##  [25] 0.15899380 0.64049081 0.13072110 0.04632960 0.80441921 0.09211205
-##  [31] 0.40677405 0.16847174 0.88947727 0.37327696 0.20190336 0.73298221
-##  [37] 0.51325601 0.61472187 0.99072866 0.96741359 0.99138081 0.38312087
-##  [43] 0.87411725 0.77286642 0.02621048 0.30907336 0.34529695 0.27606660
-##  [49] 0.15245542 0.76785320 0.07457690 0.14148838 0.91396213 0.09679053
-##  [55] 0.64201144 0.31494445 0.89870383 0.33998110 0.45669218 0.46536280
-##  [61] 0.77658230 0.60692886 0.34119550 0.23947021 0.99246758 0.30223407
-##  [67] 0.09942117 0.89714011 0.60941095 0.70566827 0.68389257 0.61684051
-##  [73] 0.96696813 0.96508238 0.67501858 0.98063247 0.45505330 0.81060095
-##  [79] 0.51012549 0.90547663 0.72535998 0.99487271 0.43499446 0.13828402
-##  [85] 0.30088358 0.32747475 0.25731223 0.77309186 0.90133947 0.99844080
-##  [91] 0.40373796 0.90706101 0.83195165 0.56077871 0.81770300 0.06215251
-##  [97] 0.99295177 0.85292035 0.75387498 0.25468416</code></pre>
+<pre><code>##   [1] 0.21684464 0.59845495 0.84191947 0.57793828 0.38706972 0.60493506
+##   [7] 0.31511090 0.18870227 0.94292112 0.02721821 0.06885147 0.63531875
+##  [13] 0.09598452 0.50416077 0.36320276 0.54464262 0.82148192 0.25827346
+##  [19] 0.01180936 0.36071318 0.93483042 0.41049879 0.79644265 0.17143768
+##  [25] 0.71882778 0.48679686 0.22185937 0.94339654 0.23785778 0.22410062
+##  [31] 0.79397409 0.46204262 0.59466246 0.11138071 0.02609501 0.19200510
+##  [37] 0.74700106 0.57727392 0.36045108 0.61715513 0.69388828 0.56995961
+##  [43] 0.25056171 0.43145667 0.48672252 0.98798426 0.77807635 0.69073376
+##  [49] 0.84588348 0.70964476 0.78568996 0.62682515 0.76453549 0.21541469
+##  [55] 0.12505817 0.11512207 0.60307354 0.62991039 0.06370542 0.86846173
+##  [61] 0.16952450 0.82205663 0.92041753 0.54520762 0.11933240 0.58079254
+##  [67] 0.75335941 0.51561089 0.72297484 0.49396414 0.07063062 0.81997872
+##  [73] 0.98202295 0.16297368 0.66189645 0.03560952 0.94240999 0.42047471
+##  [79] 0.36830872 0.21283538 0.27580966 0.94783697 0.62103053 0.37408386
+##  [85] 0.13906075 0.86252717 0.97656372 0.26493122 0.93411407 0.68800352
+##  [91] 0.61635758 0.59487189 0.64605124 0.45453548 0.59987045 0.09462299
+##  [97] 0.67955827 0.70128050 0.16833617 0.26520202</code></pre>
 </div>
 <div id="problem-9" class="section level1">
 <h1>Problem 9</h1>
 <p>Generate 100 random numbers within a specific rang</p>
 <pre class="r"><code>runif(100, min = 0, max = 1000)</code></pre>
-<pre><code>##   [1] 534.281775 756.974697  61.414546 442.226287 474.686933 968.649422
-##   [7]   6.062034 359.668487 276.360026 305.887282 163.532373 289.825310
-##  [13] 898.398575 297.760623 908.776689 843.422330 670.345027  74.833174
-##  [19] 629.699290 907.350126 831.674000 292.256687 805.211323 341.329648
-##  [25] 696.025805 832.498385 223.721766 623.346964 228.738159 267.769765
-##  [31] 994.687854 452.366946 162.827638 451.619870 282.320875 282.901560
-##  [37]  13.891623 387.137261 141.367769 104.550475 176.796331 504.012704
-##  [43] 809.249564 859.159373 567.576866 985.286436 155.536146 117.139213
-##  [49] 640.512924 134.072846 616.773121 492.226159 112.851000 870.727233
-##  [55]  30.573458 455.673903 345.685819 554.528953  47.500828 844.603064
-##  [61] 332.061881 530.840172 320.936956 694.046827   5.829433 228.533656
-##  [67] 617.808292 651.769000 437.149785 283.411253 702.601454 728.055337
-##  [73] 163.977468 227.294547 923.270946 381.540874 514.987334  71.611443
-##  [79] 487.022949 788.970576 984.277818 427.752848 777.139495 274.584099
-##  [85] 322.558174 474.580289 231.122339 224.864706 123.464498 436.150595
-##  [91] 763.089693 789.627344 425.583636  66.071804 450.170201 781.108668
-##  [97] 932.501746 958.300326 148.490734 293.286331</code></pre>
+<pre><code>##   [1] 335.111363  79.569005 620.616608 348.163113 380.114230 334.520419
+##   [7] 704.766006 189.470221 630.535178 297.518468 953.908144 336.073639
+##  [13] 219.802904   3.943842  29.795475 356.671968  54.000631 795.724192
+##  [19] 751.550323 943.943701 138.942858 713.685850 708.374912 854.269783
+##  [25] 654.667372 913.382667 821.089753 486.334924 602.402696 339.800067
+##  [31] 480.059482 777.489268 734.911228 717.109269 858.548092 293.456340
+##  [37]  12.301857 898.615621 294.839203   1.525549 820.980226 978.354577
+##  [43] 380.973684 304.002129   3.998274 103.386888 997.070491 499.538315
+##  [49] 888.043325 459.492750 588.115611  11.199609 725.430866   3.471685
+##  [55] 234.666828 324.594032 430.791487 607.158142 197.124199 692.838589
+##  [61] 934.257383 421.086617 280.259679 334.075256 480.757548 995.129038
+##  [67] 758.586574 711.139023 871.168681 315.660879 706.608085 955.742322
+##  [73] 219.005327 573.662581 492.013934  62.083068 859.241064 564.516366
+##  [79] 270.512472 556.202842 939.347967 242.560526 863.262356 320.929498
+##  [85] 778.444749 303.547802 105.713793 763.475029 748.719730 969.197606
+##  [91] 148.653248 386.253969 135.209955 936.063699 778.534296 589.578470
+##  [97] 539.387810 397.281544  12.921348 212.256470</code></pre>
 </div>
 <div id="problem-10" class="section level1">
 <h1>Problem 10</h1>
@@ -718,6 +684,13 @@ c%in%a</code></pre>
 <p>Put the current computer time in milliseconds into a variable</p>
 <pre class="r"><code>print(as.numeric(Sys.time())*1, digits=3)</code></pre>
 <pre><code>## [1] 1.6e+09</code></pre>
+</div>
+<div id="patrick-custom-question" class="section level1">
+<h1>Patrick Custom Question</h1>
+<p>Create a random histogram for a set of numbers</p>
+<pre class="r"><code>samples &lt;- rnorm(100, mean=0, sd=1)
+hist(samples)</code></pre>
+<p><img src="Journal_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 </div>
 
 

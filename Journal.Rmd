@@ -234,13 +234,41 @@ Put the current computer time in milliseconds into a variable
 ```{r}
 print(as.numeric(Sys.time())*1, digits=3)
 ```
-# Patrick Custom Question
-Create a random histogram for a set of numbers
+# Problem 17
+Measure how long a piece of code takes to run by measuring the time before the code is run, and after the code is run, and taking the difference to find the total time
+```{r}
+a<- Sys.time()
+samples <- rnorm(100, mean=0, sd=1)
+hist(samples)
+b<- Sys.time()
+b-a
+```
+# Problem 18
+Read a .txt file or .csv file into a variable
+SKIPPED
+
+# Problem 19
+Output the contents of a variable to a .txt file
 ```{r}
 samples <- rnorm(100, mean=0, sd=1)
 hist(samples)
+write.csv(samples)
 ```
 
+
+# Problem 20
+Create a variable that stores a 20x20 matrix of random numbers
+```{r}
+a <- matrix(runif(100), ncol=20,nrow=20)
+```
+
+
+# Problem 21
+Output any matrix to a txt file using commas or tabs to separate column values, and new lines to separate row values
+```{r}
+a <- matrix(runif(100), ncol=20,nrow=20)
+write.csv(a)
+```
 
 
 
