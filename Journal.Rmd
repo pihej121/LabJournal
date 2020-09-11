@@ -304,4 +304,82 @@ Test the random number generator for a flat distribution. Generate a few million
 a<-runif(1000000,0,100)
 hist(a)
 ```
+### Practice Statistics Lab Exercises
+
+# Lab 1: 
+
+Problem 1: Compute the sum of the sequence 100 to 1000, going up by a constant value of 100 (100,200,300,400,500,600,700,800,900,1000).
+```{r}
+sum(seq(100,1000,100))
+```
+Problem 2: Compute the sum of these numbers (1,3,2,4,3,5,4,3,4,5,6,5,6,7,6,5,6,5,4,3,4,5)
+
+```{r}
+sum(1,3,2,4,3,5,4,3,4,5,6,5,6,7,6,5,6,5,4,3,4,5)
+```
+Problem 3: Write a custom sequence generator function using a for loop that generates a sequence from a starting integer value to an ending integer value in steps of 1. Demonstrate that it can produce the sequence 1 to 10.
+
+```{r}
+for(i in 1:10){
+  if(i <= 10){
+    print(i)
+  } else {
+    break
+  }
+}
+```
+Problem 4: Write a custom function to implement the following general equation to find the sum of any constant series:
+```{r}
+sum(seq(100,1000,2))
+```
+Problem 5: Write a custom function that generates a constant series between any start and end values, with any constant, and finds the sum. Have your function output both the sequence and the sum. For this problem, feel free to use the existing seq() and sum() functions in your custom function. Demonstrate the function correctly prints out the above sequence (10 to 100 in steps of 10), and its sum.
+```{r}
+seq(10,100,10)
+sum(seq(10,100,10))
+```
+Problem 6: Use the sum() and the length() functions to calculate the mean (average) of the numbers x = c(1,2,3,4,5).
+```{r}
+
+c<- (1:5)
+sum(1:5)/length(c)
+
+
+```
+
+
+# Lab 2:
+
+Problem 1:
+Use R to demonstrate that the mean minimizes the sum of the squared deviations from the mean. Accomplish the following steps:
+
+a. Produce a sample of at least 10 or more different numbers
+b. Produce a sample of at least 10 or more different numbers
+c. Produce a simulation following the example from the concepts section
+d. Use your simulation to test a range of numbers smaller and larger than the      mean to show that the mean minimizes the sum of the squared deviations from     the mean.
+e. Plot your results.
+```{R}
+scores<- sample(1:20, 64, replace=TRUE)
+
+min(scores)
+
+max(scores)
+
+numbers_to_test <- min(scores):max(scores)
+
+sum_deviations <-c() # create an empty vector to store sums
+for(i in numbers_to_test) {
+  sum_deviations[i] <- sum(scores-i)
+}
+
+sum_deviations
+
+sd(scores)
+
+plot(abs(sum_deviations))
+
+```
+
+
+
+
 
