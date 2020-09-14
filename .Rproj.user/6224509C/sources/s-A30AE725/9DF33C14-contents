@@ -379,7 +379,28 @@ plot(abs(sum_deviations))
 
 ```
 
+Problem 2: Write a custom R function for any one of the following descriptive statistics: median, mode, standard deviation, variance. Demonstrate that it produces the same value as the base R function given some set of numbers.
+
+```{R}
+c<- (1:10) 
+Mymean<- mean(c)
+Mymean
+
+mymean1<- (sum(c)/length(c))
+mymean1
+
+
+median(c)
 
 
 
-
+my_median <- function(C){
+   x <- sort(C)
+   if((length(C) %% 2) == 0){
+    return((C[length(C)/2] + C[length(C)/2 + 1]) / 2)
+   }
+   else{
+     return(C[(length(C)/2) + 0.5])
+   }
+}
+```
